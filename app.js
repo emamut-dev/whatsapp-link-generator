@@ -134,3 +134,16 @@ document.getElementById('message').addEventListener('keypress', function (e) {
     generateWhatsAppLink();
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const countryCodeSelect = document.getElementById('countryCode');
+  const storedCountryCode = localStorage.getItem('lastCountryCode');
+
+  if (storedCountryCode) {
+    countryCodeSelect.value = storedCountryCode;
+  }
+
+  countryCodeSelect.addEventListener('change', (event) => {
+    localStorage.setItem('lastCountryCode', event.target.value);
+  });
+});
