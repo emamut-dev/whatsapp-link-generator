@@ -1,0 +1,18 @@
+{
+  "name": "whatsapp-link-generator",
+  "version": "1.1.0",
+  "description": "Generador rápido de enlaces para WhatsApp con buscador de países interactivo y soporte de modo oscuro",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node --test"
+  },
+  "keywords": [
+    "whatsapp",
+    "link-generator",
+    "wa.me",
+    "pwa"
+  ],
+  "author": "Faber Andrés Vergara Holguín",
+  "license": "ISC"
+}
